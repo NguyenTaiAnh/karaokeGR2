@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+<!--    <EditText-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Nhập từ khóa"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:background="@color/white"-->
+<!--        android:padding="20dp"-->
+<!--        />-->
+<!--    <Button-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Tìm kiếm"-->
+<!--        android:layout_gravity="center"-->
+<!--        />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/editSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/lvMusic"
+            android:hint="Nhập từ khóa"
+            android:textColor="@color/white"
+            android:background="@color/white"
+            android:padding="20dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/editSearch"
+            android:layout_above="@+id/lvMusic"
+            android:layout_height="wrap_content"
+            android:text="Tìm kiếm"
+            android:layout_gravity="center"
+            />
+
+        <ListView
+            android:id="@+id/lvMusic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@android:dimen/app_icon_size"
+        >
+
+        <Button
+            android:id="@+id/btnHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Home" />
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/btnHome"
+            android:text="Search" />
+
+        <Button
+            android:id="@+id/btnLove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/btnSearch"
+            android:text="Love" />
+    </RelativeLayout>
+
+</RelativeLayout>
